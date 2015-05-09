@@ -1,0 +1,141 @@
+<link rel="stylesheet" href="css/etuplim.css">
+<h1>Määrittely</h1>
+
+<p>Animaatio määritellään ensin elementin säännössä. Tämän jälkeen animaation pisteet määritellään @keyframes-säännön avulla.</p>
+
+
+<pre>
+<code>
+.animoitu {
+      /* Animaation nimi */
+      animation-name: testi; 
+
+      animation-duration: 2s;
+      animation-iteration-count: infinite; 
+      animation-direction: alternate;
+}
+
+/* Samalla nimellä keyframes-sääntö: */
+@keyframes testi {
+      from {
+            color:red;
+      }
+
+      to {
+            color:blue;
+      }
+}
+</code>
+</pre>
+
+<span class="animoitu">Hiipsis (class="animoitu")</span>
+
+<h1>Useampi avainpiste</h1>
+
+<p>Monimutkaisempia animaatioita voidaan määritellä useammilla avainpisteillä:</p>
+
+<pre>
+<code>
+.animoitu2 {
+      /* Animaation nimi */
+      animation-name: testi2; 
+
+      animation-duration: 4s;
+      animation-iteration-count: infinite; 
+      animation-direction: alternate;
+}
+
+/* Samalla nimellä keyframes-sääntö: */
+@keyframes testi2 {
+      from {
+            color:red;
+      }
+
+      25% {
+            color:white;
+      }
+
+      50% {
+            color:black;
+      }
+
+      75% {
+            color:white;
+      }
+
+      to {
+            color:blue;
+      }
+}
+</code>
+</pre>
+<span class="animoitu2">Toinen piip</span>
+
+<h1>Animoitavat elementit</h1>
+<p>Lista kaikista animoitavista elementeistä löytyy esimerkiksi <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">MDN:stä</a>.</p>
+
+<p>Esimerkiksi transform-tyylit sopivat erityisen hyvin käytettäväksi animaatioiden kanssa.</p>
+
+<pre>
+<code>
+.animoitu3 {
+      /* Animaation nimi */
+      animation-name: testi3; 
+
+      animation-duration: 2s;
+      animation-iteration-count: infinite; 
+      animation-direction: alternate;
+}
+
+/* Samalla nimellä keyframes-sääntö: */
+@keyframes testi3 {
+      from {
+            transform: rotate(0deg);
+      }
+
+      to {
+            transform: rotate(360deg);
+      }
+}
+</code>
+</pre>
+<div class="animoitu3">Kolmas piip</div>
+
+<h1>Sananen selaintuesta</h1>
+<p>Käytännösssä edellä mainitut säännöt eivät riitä, sillä osa selaimista ei vielä tue animaatioita ilman selainkohtaisia etuliitteitä.</p>
+<p><a href="http://caniuse.com/#feat=css-animation">CanIUse-sivuston</a> perusteella näyttäisi riittävän että normaalien määritysten lisäksi ne kannattaa toistaa -webkit-etuliitteillä, kuten olen tällä sivulla tehnyt. </p>
+
+<pre>
+<code>
+.animoitu {
+      animation-name: testi; 
+      animation-duration: 2s;
+      animation-iteration-count: infinite; 
+      animation-direction: alternate;
+      -webkit-animation-name: testi; 
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite; 
+      -webkit-animation-direction: alternate;
+}
+
+@keyframes testi {
+      from {
+            color:red;
+      }
+
+      to {
+            color:blue;
+      }
+}
+
+@-webkit-keyframes testi {
+      from {
+            color:red;
+      }
+
+      to {
+            color:blue;
+      }
+}
+</code>
+</pre>

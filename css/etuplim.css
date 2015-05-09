@@ -1,0 +1,211 @@
+#plim {
+      width:200px;
+      height:200px;
+      border:solid;
+      border-width:40px;
+      margin:auto;
+      animation-duration: 3s;
+      animation-name: haropallo;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-name: haropallo;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+}
+
+@keyframes haropallo {
+      from {
+            transform:rotate(0deg) scale(1);
+            background-color:blue;
+            border-color:blue;
+            border-radius:0px;
+      }
+
+      25% {
+            border-radius:200px;
+            border-color:#ffffff;
+      }
+
+      50% {
+            background-color:red;
+            border-radius:0px;
+            border-color:red;
+      }
+
+      75% {
+            border-radius:200px;
+            border-color:#ffffff;
+      }
+
+
+      to {
+            transform:rotate(360deg) scale(0.2);
+            background-color:green; 
+            border-color:green;
+            border-radius:0px;
+      }
+}
+
+.animoitu {
+      -webkit-animation-duration: 1s;
+      -webkit-animation-name: testi;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-duration: 1s;
+      animation-name: testi;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+}
+
+@keyframes testi {
+      from {
+            color:red;
+      }
+
+      to {
+            color:blue;
+      }
+}
+
+.animoitu2 {
+      /* Animaation nimi */
+      animation-name: testi2; 
+
+      animation-duration: 4s;
+      animation-iteration-count: infinite; 
+      animation-direction: alternate;
+
+      -webkit-animation-name: testi2; 
+
+      -webkit-animation-duration: 4s;
+      -webkit-animation-iteration-count: infinite; 
+      -webkit-animation-direction: alternate;
+}
+
+/* Samalla nimellä keyframes-sääntö: */
+@keyframes testi2 {
+      from {
+            color:red;
+      }
+
+      25% {
+            color:white;
+      }
+
+      50% {
+            color:black;
+      }
+
+      75% {
+            color:white;
+      }
+
+      to {
+            color:blue;
+      }
+}
+.animoitu3 {
+      width:100px;
+      /* Animaation nimi */
+      animation-name: testi3; 
+
+      animation-duration: 2s;
+      animation-iteration-count: infinite; 
+      animation-direction: alternate;
+
+      -webkit-animation-name: testi3; 
+
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite; 
+      -webkit-animation-direction: alternate;
+}
+
+/* Samalla nimellä keyframes-sääntö: */
+@keyframes testi3 {
+      from {
+            transform: rotate(0deg);
+      }
+
+      to {
+            transform: rotate(360deg);
+      }
+}
+
+@-webkit-keyframes haropallo {
+      from {
+            transform:rotate(0deg) scale(1);
+            background-color:blue;
+            border-color:blue;
+            border-radius:0px;
+      }
+
+      25% {
+            border-radius:200px;
+            border-color:#ffffff;
+      }
+
+      50% {
+            background-color:red;
+            border-radius:0px;
+            border-color:red;
+      }
+
+      75% {
+            border-radius:200px;
+            border-color:#ffffff;
+      }
+
+
+      to {
+            transform:rotate(360deg) scale(0.2);
+            background-color:green; 
+            border-color:green;
+            border-radius:0px;
+      }
+}
+
+
+@-webkit-keyframes testi {
+      from {
+            color:red;
+      }
+
+      to {
+            color:blue;
+      }
+}
+
+/* Samalla nimellä keyframes-sääntö: */
+@-webkit-keyframes testi2 {
+      from {
+            color:red;
+      }
+
+      25% {
+            color:white;
+      }
+
+      50% {
+            color:black;
+      }
+
+      75% {
+            color:white;
+      }
+
+      to {
+            color:blue;
+      }
+}
+
+/* Samalla nimellä keyframes-sääntö: */
+@-webkit-keyframes testi3 {
+      from {
+            transform: rotate(0deg);
+      }
+
+      to {
+            transform: rotate(360deg);
+      }
+}

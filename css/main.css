@@ -1,0 +1,72 @@
+@import url(http://fonts.googleapis.com/css?family=Martel);
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono);
+
+* {
+      font-family: Helvetica Neue, Helvetica, serif;
+      font-size: 14pt;
+}
+
+html {
+      height:100%;
+}
+
+body {
+      min-height:100%;
+      background-image: url('../img/nebula.jpg');
+      margin:0px;
+}
+
+#middle {
+      width: 900px;
+      min-height:100vh;
+      margin:auto;
+      background:white;
+}
+
+
+#content {
+      width: 500px;
+      min-height: 500px;
+      margin:auto;
+      color:#666666;
+      padding:50px;
+      background:white;
+}
+
+#nav {
+      width: 500px;
+      text-align: center;
+      margin:auto;
+      border-bottom: solid;
+      border-color: gray;
+      background:white;
+}
+
+#nav a {
+      font-size: 24pt;
+      font-family: 'Martel', serif;
+      color: #666666;
+}
+
+#nav a:hover {
+      color: #111111;
+}
+
+#footer {
+      width: 500px;
+      text-align: center;
+      margin:auto;
+      border-top: solid;
+      border-color: gray;
+      padding:10px;
+      background:white;
+}
+
+pre {
+      border: 1px solid lightgrey;
+      padding: 10px;
+}
+
+code {
+      font-family: 'Cutive Mono', monospace;
+}
