@@ -4,6 +4,7 @@
 * {
       font-family: Helvetica Neue, Helvetica, serif;
       font-size: 14pt;
+      line-height: 1.4;
 }
 
 html {
@@ -12,7 +13,7 @@ html {
 
 body {
       min-height:100%;
-      background-image: url('../img/nebula.jpg');
+      background: url('../img/stardust.png') fixed;
       margin:0px;
 }
 
@@ -21,6 +22,7 @@ body {
       min-height:100vh;
       margin:auto;
       background:white;
+      box-shadow: 0px 0px 20px black;
 }
 
 
@@ -31,6 +33,7 @@ body {
       color:#666666;
       padding:50px;
       background:white;
+      opacity: 0;
 }
 
 #nav {
@@ -43,30 +46,78 @@ body {
 }
 
 #nav a {
-      font-size: 24pt;
+      font-size:1.5em;
       font-family: 'Martel', serif;
       color: #666666;
 }
 
 #nav a:hover {
-      color: #111111;
+      animation-name: nav_anim;
+      animation-iteration-count: infinite;
+      animation-duration:1s;
+      animation-direction: alternate;
+      -webkit-animation-name: nav_anim;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration:1s;
+      -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes nav_anim {
+   from {
+      color: black;
+   }
+   to {
+      color: #990000;
+   }
+}
+
+@keyframes nav_anim {
+   from {
+      color: black;
+   }
+   to {
+      color: #007;
+   }
 }
 
 #footer {
-      width: 500px;
-      text-align: center;
-      margin:auto;
-      border-top: solid;
-      border-color: gray;
-      padding:10px;
-      background:white;
+   width: 500px;
+   text-align: center;
+   margin:auto;
+   border-top: solid;
+   border-color: gray;
+   padding:10px;
+   background:white;
+}
+
+p {
+   text-align:justify;
 }
 
 pre {
-      border: 1px solid lightgrey;
-      padding: 10px;
+   border: 1px solid lightgrey;
+   padding: 10px;
 }
 
 code {
-      font-family: 'Cutive Mono', monospace;
+   font-family: 'Cutive Mono', monospace;
+   font-size:0.9em;
 }
+
+h1 {
+   font-family: 'Martel', serif;
+   font-size: 2em;
+   font-weight: bold;
+   padding-left:24pt;
+   border-bottom: grey solid 2pt;
+}
+
+table {
+   border-collapse: collapse;
+}
+
+table, th, td {
+   border: 1px solid #dddddd;
+   padding:5pt;
+}
+

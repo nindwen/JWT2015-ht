@@ -1,0 +1,51 @@
+* {
+   font-size: 12pt;
+}
+
+body {
+   background-image: none;
+}
+
+#middle {
+   width: auto;
+}
+
+#content {
+   width: auto;
+   margin: 5px;
+   padding:0px;
+}
+
+#nav {
+   width:auto;
+}
+#footer {
+   width:auto;
+}
+
+p {
+   text-align: left;
+}
+
+pre {
+   padding:0px;
+   border:none;
+}
+ 
+code {
+   font-family:monospace;
+   font-size: 0.7em;
+   max-width:100%;
+   margin:0px;
+   padding:0px;
+}
+
+h1 {
+   padding-left: 0px;
+}
+
+@media print {
+   #nav {
+      display: none;
+   }
+}
