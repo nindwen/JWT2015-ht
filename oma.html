@@ -1,10 +1,36 @@
 <h1>Kokeile tehdä omia animaatioita</h1>
-<form>
-   animation-name: <input type="text" /><br />
-   animaton-duration: <input type="text" /><br />
 
-   keyframes:<br />
-   <button>Add</button> <br />
-   <hr />
-   <button>Helei</button>
+<form id="animform" action="animform.php" method="POST" target="_blank">
+      <label>animation-duration</label>
+      <input name="duration" type=text value="3s"/><br />
+      <label>animation-direction</label>
+      <select id="direction" name="direction">
+            <option>normal</option>
+            <option>reverse</option>
+            <option>alternate</option>
+            <option>alternate-reverse</option>
+      </select><br />
+
+      <label>animation-timing-function</label>
+      <select id="function" name="function">
+            <option>linear</option>
+            <option>ease</option>
+            <option>ease-in</option>
+            <option>ease-out</option>
+            <option>ease-in-out</option>
+            <option>step-start</option>
+            <option>step-end</option>
+      </select><br />
+
+
+      keyframes:<br />
+      <textarea name="keyframes" rows="5" cols="40">
+            0% {
+                  background: red;
+            }
+            100% {
+                  background: blue;
+            }
+      </textarea><br />
+      <button type="submit">Tee animaatio</button>
 </form>

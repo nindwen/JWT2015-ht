@@ -4,7 +4,7 @@
 * {
       font-family: Helvetica Neue, Helvetica, serif;
       font-size: 14pt;
-      line-height: 1.4;
+      line-height: 1.6;
 }
 
 html {
@@ -21,7 +21,7 @@ body {
       width: 900px;
       min-height:100vh;
       margin:auto;
-      background:white;
+      background:#eee;
       box-shadow: 0px 0px 20px black;
 }
 
@@ -30,9 +30,9 @@ body {
       width: 500px;
       min-height: 500px;
       margin:auto;
-      color:#666666;
+      color:#444;
       padding:50px;
-      background:white;
+      background:#eee;
       opacity: 0;
 }
 
@@ -42,7 +42,7 @@ body {
       margin:auto;
       border-bottom: solid;
       border-color: gray;
-      background:white;
+      background:#eee;
 }
 
 #nav a {
@@ -52,72 +52,77 @@ body {
 }
 
 #nav a:hover {
-      animation-name: nav_anim;
-      animation-iteration-count: infinite;
-      animation-duration:1s;
-      animation-direction: alternate;
-      -webkit-animation-name: nav_anim;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-duration:1s;
-      -webkit-animation-direction: alternate;
-}
-
-@-webkit-keyframes nav_anim {
-   from {
-      color: black;
-   }
-   to {
-      color: #990000;
-   }
-}
-
-@keyframes nav_anim {
-   from {
-      color: black;
-   }
-   to {
-      color: #007;
-   }
+      color: #000;
 }
 
 #footer {
-   width: 500px;
-   text-align: center;
-   margin:auto;
-   border-top: solid;
-   border-color: gray;
-   padding:10px;
-   background:white;
+      width: 500px;
+      text-align: center;
+      margin:auto;
+      border-top: solid;
+      border-color: gray;
+      padding:10px;
+      background:#eee;
 }
 
 p {
-   text-align:justify;
+      text-align:justify;
 }
 
 pre {
-   border: 1px solid lightgrey;
-   padding: 10px;
+      border: 1px solid lightgrey;
+      padding: 10px;
 }
 
 code {
-   font-family: 'Cutive Mono', monospace;
-   font-size:0.9em;
+      font-family: 'Cutive Mono', monospace;
+      font-size:0.9em;
+      color: #111;
 }
 
 h1 {
-   font-family: 'Martel', serif;
-   font-size: 2em;
-   font-weight: bold;
-   padding-left:24pt;
-   border-bottom: grey solid 2pt;
+      font-family: 'Martel', serif;
+      font-size: 2em;
+      font-weight: bold;
+      padding-left:24pt;
+      border-bottom: grey solid 2pt;
 }
 
 table {
-   border-collapse: collapse;
+      border-collapse: collapse;
 }
 
 table, th, td {
-   border: 1px solid #dddddd;
-   padding:5pt;
+      border: 1px solid #dddddd;
+      padding:5pt;
 }
 
+form {
+      width: 100%;
+      margin: 0 auto;
+}
+
+label, input {
+      display: inline-block;
+}
+
+label {
+      width: 40%;
+      text-align: right;
+      margin-right: 20px;
+}
+
+.nuoli {
+      text-decoration: none;
+      color: #444;
+}
+
+.nuoli:hover {
+      color: black;
+}
+.vasen {
+      float: left;
+}
+.oikea {
+      float: right;
+}

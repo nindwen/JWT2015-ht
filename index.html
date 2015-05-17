@@ -2,15 +2,18 @@
 <html>
       <head>
             <meta charset="UTF-8" />
+            <!-- Toimiva mobiili -->
             <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
             <link rel="stylesheet" href="css/main.css" />
             <link rel="stylesheet" media="print, (max-width: 800px)" href="css/mobiili.css" />
+            <link rel="stylesheet" href="css/animaatiot.css" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
             <title>CSS-animaatiot</title>
             <script src="js/main.js"></script>
       </head>
-      <body>
+      <body onLoad="lataa('etusivu.html');">
             <div id="middle">
                   <div id="nav">
                      <a href="javascript:lataa('etusivu.html');">
@@ -26,16 +29,19 @@
                            oma
                         </a>
                   </div>
+                  <!-- Tähän ladataan varsinainen sisältö -->
                   <div id="content"></div>
+
                   <div id="footer">
+                        <a href="#middle" class="nuoli vasen">⬆</a>
                         <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fpeople.uta.fi%2F~lk415553%2Fkurssit%2FJWT%2Fht%2F">
                               <img src="img/html5-logo.png" alt="Valid HTML5!" />
                         </a>    
                         <a href="http://jigsaw.w3.org/css-validator/check/referer">
                               <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
                         </a>
+                        <a href="#middle" class="nuoli oikea">⬆</a>
                   </div>
             </div>
-            <script>lataa("etusivu.html");</script>
       </body>
 </html>
