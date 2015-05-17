@@ -84,7 +84,6 @@ h1 {
       font-family: 'Martel', serif;
       font-size: 2em;
       font-weight: bold;
-      padding-left:24pt;
       border-bottom: grey solid 2pt;
 }
 
@@ -125,4 +124,10 @@ label {
 }
 .oikea {
       float: right;
+}
+
+#lisaa_validointia, #lisaa_validointia a {
+      font-size: 80%;
+      color: #666;
+      text-decoration: none;
 }
